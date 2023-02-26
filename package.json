@@ -7,7 +7,7 @@
         "template",
         "package"
     ],
-    "homepage": "https://github.com/kwaight/ts-package-template#readme",
+    "homepage": "https://github.com/kwaight/template-typescript-package#readme",
     "author": {
         "name": "Kiefer Waight",
         "email": "kiefer.waight@gmail.com",
@@ -31,10 +31,10 @@
     "private": true,
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/kwaight/ts-package-template.git"
+        "url": "git+https://github.com/kwaight/template-typescript-package.git"
     },
     "bugs": {
-        "url": "https://github.com/kwaight/ts-package-template/issues"
+        "url": "https://github.com/kwaight/template-typescript-package/issues"
     },
     "main": "src/index.js",
     "devDependencies": {
