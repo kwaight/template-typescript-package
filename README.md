@@ -28,8 +28,8 @@ This is a template for a typescript package
 
 ```bash
 #!/bin/bash
-npm install // Install dependencies
-npm install:clean // Clear dependencies then install
+npm install         # Install dependencies
+npm install:clean   # Clear dependencies then install
 ```
 
 ## Test
@@ -50,11 +50,11 @@ npm run lint
 
 ```bash
 #!/bin/bash
-npm run build:src // Build source
-npm run build:docs // Build documentation
-npm run build:docs:json // Build json documentation
-npm run build // Build src, docs, and json
-npm run build:clean // Delete existing artifacts and rebuild src, docs, and json
+npm run build:src           # Build source
+npm run build:docs          # Build documentation
+npm run build:docs:json     # Build json documentation
+npm run build               # Build src, docs, and json
+npm run build:clean         # Delete existing artifacts and rebuild src, docs, and json
 ```
 
 ## Deploy
