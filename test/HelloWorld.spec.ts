@@ -1,4 +1,4 @@
-import { HelloWorld, HelloWorldOutput, HelloWorldInput} from '../../src';
+import { HelloWorld, HelloWorldOutput, HelloWorldInput} from '../src';
 
 describe('HelloWorld', () => {
     it('should return "Hello World!"', () => {
