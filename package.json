@@ -1,0 +1,66 @@
+{
+    "version": "1.0.0",
+    "name": "template-typescript-package",
+    "description": "A typescript package template",
+    "keywords": [
+        "typescript",
+        "template",
+        "package"
+    ],
+    "homepage": "https://github.com/kwaight/ts-package-template#readme",
+    "author": {
+        "name": "Kiefer Waight",
+        "email": "kiefer.waight@gmail.com",
+        "url": "https://github.com/kwaight"
+    },
+    "contributors": [
+        {
+            "name": "Kiefer Waight",
+            "email": "kiefer.waight@gmail.com",
+            "url": "https://github.com/kwaight"
+        }
+    ],
+    "maintainers": [
+        {
+            "name": "Kiefer Waight",
+            "email": "kiefer.waight@gmail.com",
+            "url": "https://github.com/kwaight"
+        }
+    ],
+    "license": "UNLICENSED",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kwaight/ts-package-template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kwaight/ts-package-template/issues"
+    },
+    "main": "src/index.js",
+    "devDependencies": {
+        "@types/jest": "^29.4.0",
+        "@types/node": "^18.14.1",
+        "@typescript-eslint/eslint-plugin": "^5.53.0",
+        "@typescript-eslint/parser": "^5.53.0",
+        "eslint": "^8.34.0",
+        "jest": "^29.4.3",
+        "ts-jest": "^29.0.5",
+        "ts-node": "^10.9.1",
+        "typedoc": "^0.23.25",
+        "typescript": "^4.9.5"
+    },
+    "scripts": {
+        "test": "jest",
+        "build": "npm run build:src && npm run build:docs && npm run build:docs:json",
+        "build:clean": "rm -rf dist && npm run build",
+        "build:src": "tsc",
+        "build:docs": "typedoc src/index.ts",
+        "build:docs:json": "typedoc src/index.ts --json dist/docs.json",
+        "lint": "eslint src --ext .ts",
+        "deploy": "echo \"Error: no deploy specified\" && exit 1",
+        "install:clean": "rm -rf node_modules && npm install && npm install"
+    },
+    "engines": {
+        "node": ">=18.13.0"
+    }
+}
